@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+.nav-bar {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  box-sizing: content-box;
+  padding: 0px 71px;
+
+  &-logo {
+    height: 47px;
+  }
+
+  &-items {
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &-item {
+    padding: 0px 20px;
+    text-align: left;
+    font: 800 20px Raleway;
+    letter-spacing: 1.2px;
+    color: #383833;
+    opacity: 1;
+  }
+}
