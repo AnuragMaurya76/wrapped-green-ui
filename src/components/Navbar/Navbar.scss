@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 
 .nav-bar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
   height: 80px;
   display: flex;
   justify-content: space-between;

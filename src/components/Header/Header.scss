@@ -1,0 +1,75 @@
+.header {
+  overflow-x: hidden;
+  height: 800px;
+  background-attachment: scroll;
+  background-image: linear-gradient(to bottom, #def0d8, #fafafa);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-logo {
+    width: 50%;
+    &-circle {
+      margin-right: -350px;
+      margin-top: -225px;
+      border-radius: 50%;
+      background: #387546;
+      width: 900px;
+      height: 900px;
+      &-image {
+        padding-top: 250px;
+        padding-right: 150px;
+        height: 65%;
+        width: 65%;
+      }
+    }
+  }
+
+  &-info {
+    width: 50%;
+    &-title {
+      padding: 100px 75px 0px 75px;
+      text-align: left;
+      font: 900 64px/71px Raleway;
+      letter-spacing: 0px;
+      color: #383833;
+      opacity: 1;
+    }
+
+    &-message {
+      padding: 30px 75px;
+      text-align: left;
+      font: 20px/24px Raleway;
+      letter-spacing: 0px;
+      color: #383833;
+      opacity: 1;
+    }
+
+    &-menu-button {
+      margin: 0px 75px;
+      padding: 13px 32px;
+      height: fit-content;
+      width: fit-content;
+      background: #f19a33 0% 0% no-repeat padding-box;
+      border-radius: 8px;
+      opacity: 1;
+      &-title {
+        text-align: left;
+        font: normal normal normal 20px/27px Raleway;
+        letter-spacing: 0px;
+        color: #ffffff;
+        opacity: 1;
+        &-icon {
+          height: 16px;
+        }
+      }
+    }
+
+    &-chilli-image {
+      padding-top: 80px;
+      height: 180px;
+      width: 180px;
+      margin-left: -35px;
+    }
+  }
+}
