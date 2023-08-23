@@ -1,0 +1,47 @@
+.menu {
+  overflow-x: hidden;
+  height: 800px;
+  background-attachment: scroll;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-header {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    &-heading {
+      font: normal 30px/42px Raleway;
+      letter-spacing: 0px;
+      color: #f19a33;
+      opacity: 1;
+    }
+    &-sub-heading {
+      font: bold 56px/58px Raleway;
+      letter-spacing: 0px;
+      color: #383833;
+      opacity: 1;
+    }
+
+    &-info {
+      font: normal 24px/29px Raleway;
+      letter-spacing: 0px;
+      color: #383833;
+      opacity: 1;
+    }
+  }
+
+  &-card {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    &-1 {
+    }
+    &-2 {
+    }
+    &-3 {
+    }
+  }
+}

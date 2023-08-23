@@ -1,0 +1,43 @@
+.food-card {
+  width: 360px;
+  height: 386px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.19);
+
+  &-image {
+    height: 70%;
+  }
+
+  &-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &-heading {
+      text-align: left;
+      font: bold 22px/32px Raleway;
+      letter-spacing: 0px;
+      color: #383833;
+      opacity: 1;
+    }
+
+    &-cost {
+      text-align: left;
+      font: bold 22px/32px Raleway;
+      letter-spacing: 0px;
+      color: #383833;
+      opacity: 1;
+    }
+  }
+
+  &-sub-heading {
+    padding-left: 20px;
+    text-align: left;
+    font: normal 18px/27px Raleway;
+    letter-spacing: 0px;
+    color: #383833;
+    opacity: 1;
+  }
+}

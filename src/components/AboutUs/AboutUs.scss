@@ -2,7 +2,7 @@
   overflow-x: hidden;
   height: 800px;
   background-attachment: scroll;
-  background-image: linear-gradient(to bottom, #def0d8, #fafafa);
+  background: #fafafa;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,34 +10,52 @@
   &-logo {
     width: 50%;
     &-circle {
-      margin-right: -350px;
-      margin-top: -225px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-left: -250px;
       border-radius: 50%;
-      background: #387546;
-      width: 900px;
-      height: 900px;
+      background: #598463;
+      width: 630px;
+      height: 630px;
       &-image {
-        padding-top: 250px;
-        padding-right: 150px;
-        height: 65%;
-        width: 65%;
+        margin-right: -225px;
+        height: 85%;
+        width: 85%;
       }
     }
   }
 
   &-info {
+    height: 50%;
     width: 50%;
-    &-title {
-      padding: 100px 75px 0px 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    &-heading {
       text-align: left;
-      font: 900 64px/71px Raleway;
+      font: normal 30px/42px Raleway;
+      letter-spacing: 0px;
+      color: #f19a33;
+      opacity: 1;
+    }
+    &-sub-heading {
+      text-align: left;
+      font: bold 56px/58px Raleway;
+      letter-spacing: 0px;
+      color: #383833;
+      opacity: 1;
+    }
+
+    &-info {
+      text-align: left;
+      font: normal 24px/29px Raleway;
       letter-spacing: 0px;
       color: #383833;
       opacity: 1;
     }
 
     &-message {
-      padding: 30px 75px;
       text-align: left;
       font: 20px/24px Raleway;
       letter-spacing: 0px;
@@ -46,11 +64,10 @@
     }
 
     &-menu-button {
-      margin: 0px 75px;
       padding: 13px 32px;
       height: fit-content;
       width: fit-content;
-      background: #f19a33 0% 0% no-repeat padding-box;
+      background: #387546 0% 0% no-repeat padding-box;
       border-radius: 8px;
       opacity: 1;
       &-title {
