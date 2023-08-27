@@ -1,13 +1,13 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import FoodCard from "../FoodCard/FoodCard";
 import MenuPhoto1 from "../../assets/menu_photo1@2x.png";
 import MenuPhoto2 from "../../assets/menu_photo2@2x.png";
 import MenuPhoto3 from "../../assets/menu_photo_3@2x.png";
 
 import "./Menu.scss";
-function Menu() {
+const Menu = forwardRef((props, ref) => {
   return (
-    <div className="menu">
+    <div className="menu" ref={ref}>
       <div className="menu-header">
         <div className="menu-header-heading">Menu</div>
         <div className="menu-header-sub-heading">Explore Our Best Food</div>
@@ -43,5 +43,5 @@ function Menu() {
       </div>
     </div>
   );
-}
+});
 export default Menu;

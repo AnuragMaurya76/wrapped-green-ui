@@ -1,5 +1,5 @@
-import React from "react";
-import "./Footer.scss";
+import React, { forwardRef } from "react";
+import "./Contact.scss";
 import InfoCard from "../InfoCard/InfoCard";
 import timeIcon from "../../assets/time_icon@2x.png";
 import localizationIcon from "../../assets/localization_icon@2x.png";
@@ -9,9 +9,9 @@ import facebook from "../../assets/Icon awesome-facebook.svg";
 import instagram from "../../assets/Icon awesome-instagram.svg";
 import twitter from "../../assets/Icon awesome-twitter.svg";
 
-function Footer() {
+const Contact = forwardRef((props, ref) => {
   return (
-    <div className="footer">
+    <div className="footer" ref={ref}>
       <div className="footer-info-card">
         <InfoCard
           title={"Today 12 pm - 9 pm"}
@@ -62,5 +62,5 @@ function Footer() {
       </div>
     </div>
   );
-}
-export default Footer;
+});
+export default Contact;

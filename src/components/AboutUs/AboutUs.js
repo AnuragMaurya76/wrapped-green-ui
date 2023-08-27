@@ -1,12 +1,12 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import vegetable_table from "../../assets/vegetable_table@2x.png";
 import "./AboutUs.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { ABOUT_US_INFO } from "../../constants/MessageConstants";
-function AboutUs() {
+const AboutUs = forwardRef((props, ref) => {
   return (
-    <div className="about-us">
+    <div className="about-us" ref={ref}>
       <div className="about-us-logo-circle">
         <img
           src={vegetable_table}
@@ -30,5 +30,5 @@ function AboutUs() {
       </div>
     </div>
   );
-}
+});
 export default AboutUs;
