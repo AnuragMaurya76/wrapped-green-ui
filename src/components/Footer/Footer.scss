@@ -1,6 +1,6 @@
 .footer {
   overflow: hidden;
-  height: 800px;
+  height: 650px;
   background-attachment: scroll;
   background: #fafafa;
   display: flex;
@@ -16,18 +16,54 @@
   }
 
   &-circle {
-    margin-top: 350px;
-    overflow-y: hidden;
+    margin-top: 180px;
     border-radius: 50%;
     background: #598464;
     width: 1800px;
     height: 1800px;
     margin-bottom: -1100px;
-    &-image {
-      padding-top: 250px;
-      padding-right: 150px;
-      height: 65%;
-      width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-logo {
+      margin-top: -130px;
+      border-radius: 50%;
+      background: #fafafa;
+      width: 220px;
+      height: 220px;
+      &-image {
+        padding: 35px;
+        height: 67%;
+      }
+    }
+    &-logo:hover {
+      cursor: pointer;
+    }
+    &-navigation {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      &-button {
+        margin: 20px 50px;
+        font: bold 20px Raleway;
+        letter-spacing: 1.2px;
+        color: #fafafa;
+        opacity: 1;
+      }
+      &-button:hover {
+        cursor: pointer;
+      }
+    }
+    &-social {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      &-image {
+        margin: 20px 50px;
+      }
+      &-image:hover {
+        cursor: pointer;
+      }
     }
   }
 }

@@ -64,6 +64,7 @@
     }
 
     &-menu-button {
+      transition: all 0.2s;
       padding: 13px 32px;
       height: fit-content;
       width: fit-content;
@@ -80,6 +81,10 @@
           height: 16px;
         }
       }
+    }
+    &-menu-button:hover {
+      cursor: pointer;
+      transform: scale(1.05);
     }
 
     &-chilli-image {

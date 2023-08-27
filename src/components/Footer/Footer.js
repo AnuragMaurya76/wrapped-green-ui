@@ -4,6 +4,10 @@ import InfoCard from "../InfoCard/InfoCard";
 import timeIcon from "../../assets/time_icon@2x.png";
 import localizationIcon from "../../assets/localization_icon@2x.png";
 import phoneIcon from "../../assets/phone_icon@2x.png";
+import wrappedGreenLogo from "../../assets/wrapped_green_logo2@2x.png";
+import facebook from "../../assets/Icon awesome-facebook.svg";
+import instagram from "../../assets/Icon awesome-instagram.svg";
+import twitter from "../../assets/Icon awesome-twitter.svg";
 
 function Footer() {
   return (
@@ -25,7 +29,37 @@ function Footer() {
           img={phoneIcon}
         />
       </div>
-      <div className="footer-circle"></div>
+      <div className="footer-circle">
+        <div className="footer-circle-logo">
+          <img
+            src={wrappedGreenLogo}
+            alt="img_alt"
+            className="footer-circle-logo-image"
+          />
+        </div>
+        <div className="footer-circle-navigation">
+          <div className="footer-circle-navigation-button">About us</div>
+          <div className="footer-circle-navigation-button">Menu</div>
+          <div className="footer-circle-navigation-button">Contact</div>
+        </div>
+        <div className="footer-circle-social">
+          <img
+            className="footer-circle-social-image"
+            src={facebook}
+            alt="facebook"
+          />
+          <img
+            className="footer-circle-social-image"
+            src={twitter}
+            alt="twitter"
+          />
+          <img
+            className="footer-circle-social-image"
+            src={instagram}
+            alt="instagram"
+          />
+        </div>
+      </div>
     </div>
   );
 }
